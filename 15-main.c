@@ -12,7 +12,8 @@ int main(void)
     binary_tree_t *root;
     int full = 0;
 
-
+	full = binary_tree_is_full(NULL);
+    printf("Is %d full: %d\n", 31, full);
     root = binary_tree_node(NULL, 98);
     root->left = binary_tree_node(root, 12);
     root->right = binary_tree_node(root, 402);
